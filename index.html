@@ -99,6 +99,14 @@ html, body {
     z-index: 2;
    transform: scale(2) ;
  }
+
+@media (max-width: 560px) {
+.pouce-wrapper {
+   transform: scale(1.5) ;
+ }
+}
+
+
  .pouce-fountain {
  	flex: 80%;
  	position: relative;
@@ -648,7 +656,19 @@ html {
   z-index: 20;
 }
 
+#kid {
 
+width:250px;
+height:auto;
+}
+
+@media (max-width: 777px) {
+	#kid {
+		width:130px;
+		height:auto;
+		margin-top:50px;
+	}
+}
 
 </style>
 </head>
@@ -661,8 +681,11 @@ html {
 
 
 
-<div class="container-fluid">
 
+
+	<div style=" position:absolute; top: 75vh; left: 50%; transform: translate(-50%, -50%); z-index:1000;">
+		<img id="kid" src="kids.png" style="">
+	</div>
 	<div class="loading-init">
 		<div class="loading-init__header"></div>
 		<div class="loading-init__status"></div>
@@ -757,7 +780,7 @@ html {
 
 
 
-	<div class="container" style="display:flex; height:100%; width:100%; position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+	<div class="container" style="display:flex; height:100%; width:100%; position:absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);">
 		<div class="row col-12 col-md-6 justify-content-center align-items-center">
 			<svg id="demo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
@@ -776,7 +799,7 @@ html {
 
 
 
-	<div class="container justify-content-between align-items-end" style="display:flex; height:80%; width:100%; position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+	<div class="container-fluid justify-content-between align-items-end" style="display:flex; height:80%; width:100%; position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
 		<div class="row col-4 d-flex justify-content-center" style="transform: rotate(20deg);">
 			<div class="pouce-wrapper">
 				<div class="pouce-fountain">
